@@ -4,9 +4,6 @@ import { useColorStore } from "../stores/color";
 
 const store = useColorStore();
 
-const bgcolor = ref(store.color.background);
-const textcolor = ref(store.color.text);
-const accentcolor = ref(store.color.accent);
 </script>
 
 

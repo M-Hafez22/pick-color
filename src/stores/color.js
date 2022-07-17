@@ -10,15 +10,15 @@ export const useColorStore = defineStore({
       accent: '#0ec094'
     }
   }),
-  actions: {
-    changeTextColor(clr) {
-      this.color.text = clr
-    },
-    changeBgColor(clr) {
-      this.color.background = clr
-    },
-    changeAccentColor(clr) {
-      this.color.accent = clr
-    }
-  }
+  // actions: {
+  //   changeTextColor(clr) {
+  //     this.color.text = clr
+  //   },
+  //   changeBgColor(clr) {
+  //     this.color.background = clr
+  //   },
+  //   changeAccentColor(clr) {
+  //     this.color.accent = clr
+  //   }
+  // }
 })
