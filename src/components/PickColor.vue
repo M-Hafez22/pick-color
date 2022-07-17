@@ -13,15 +13,15 @@ const accentcolor = ref(store.color.accent);
 <template>
   <div>
     <label>background Color:</label>
-    <input type="color" v-model="bgcolor"/>
+    <input type="color" v-model="store.color.background" />
   </div>
   <div>
     <label>Text Color:</label>
-    <input type="color" v-model="textcolor"/>
+    <input type="color" v-model="store.color.text" />
   </div>
   <div>
     <label>Accent Color:</label>
-    <input type="color" v-model="accentcolor"/>
+    <input type="color" v-model="store.color.accent" />
   </div>
 </template>
 
