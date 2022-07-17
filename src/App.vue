@@ -1,11 +1,10 @@
 <script setup>
-
+import PickColor from "./components/PickColor.vue";
 </script>
 
 <template>
-<h1>Pick  A Color</h1>
+  <PickColor />
 </template>
 
 <style scoped>
-
 </style>
