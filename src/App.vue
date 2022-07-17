@@ -10,7 +10,7 @@ const store = useColorStore();
     class="app"
     :style="{ color: store.color.text, background: store.color.background }"
   >
-    <div>
+    <div class="colors">
       <p>The background Color: {{ store.color.background }}</p>
       <p>The Text Color: {{ store.color.text }}</p>
       <p>The Accent Color: {{ store.color.accent }}</p>
