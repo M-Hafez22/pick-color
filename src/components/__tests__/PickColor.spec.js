@@ -26,3 +26,19 @@ describe('Renders labels', () => {
     expect(accentLabel.text()).toBe('Accent Color:')
   })
 })
+
+describe('Get Colors from Store', () => {
+  it('Get background Color from store', () => {
+    const bgColor = wrapper.findAll('[type="color"]')[0]
+    expect(bgColor.element.value).toBe(store.color.background)
+  })
+  it('Get Text Color from store', () => {
+    const textColor = wrapper.findAll('[type="color"]')[1]
+    expect(textColor.element.value).toBe(store.color.text)
+  })
+  it('Get Text Color from store', () => {
+    const accentColor = wrapper.findAll('[type="color"]')[2]
+    expect(accentColor.element.value).toBe(store.color.accent)
+  })
+})
+
