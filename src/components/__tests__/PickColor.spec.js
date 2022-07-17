@@ -41,4 +41,23 @@ describe('Get Colors from Store', () => {
     expect(accentColor.element.value).toBe(store.color.accent)
   })
 })
-
+describe('Update the Store', () => {
+  it('Update background Color', () => {
+    const backgroundColor = wrapper.findAll('input')[0]
+    backgroundColor.setValue('#222222')
+    backgroundColor.trigger('input')
+    expect(store.color.background).toBe('#222222')
+  })
+  it('Update Text Color', () => {
+    const textColor = wrapper.findAll('input')[1]
+    textColor.setValue('#222222')
+    textColor.trigger('input')
+    expect(store.color.text).toBe('#222222')
+  })
+  it('Update Accent Color', () => {
+    const accentColor = wrapper.findAll('input')[2]
+    accentColor.setValue('#222222')
+    accentColor.trigger('input')
+    expect(store.color.accent).toBe('#222222')
+  })
+})
